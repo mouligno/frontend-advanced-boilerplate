@@ -31,6 +31,12 @@ activate :autoprefixer
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
 #  :which_fake_page => "Rendering a fake page with a local variable" }
 
+[20160101, 20160102, 20160103, 20160104, 20160105].each do |post|
+  proxy "/posts/#{post}.html", '/posts/show.html', locals: { post: post }
+end
+
+
+
 ###
 # Helpers
 ###

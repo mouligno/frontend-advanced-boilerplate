@@ -1,0 +1,18 @@
+<div class="banner" style="background-image: url('<%= image_path("posts/#{data.posts[post].banner}") %>')">
+  <h1>
+    <%= data.posts[post].title %>
+  </h1>
+  <p>
+    <%= data.posts[post].author %> - <%= data.posts[post].date %>
+  </p>
+</div>
+
+<div class="container">
+  <div class="row padded">
+    <div class="col-xs-12">
+      <p>
+        <%= data.posts[post].content %>
+      </p>
+    </div>
+  </div>
+</div>
